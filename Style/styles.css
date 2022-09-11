@@ -2,6 +2,10 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes cambio-background {
+    from {background-color: white;}
+    to {background-color: #F6A21E}
+  }
 .menu{
     margin: 0;
     position: sticky;
@@ -65,6 +69,8 @@ ul {
     padding: 1rem;
     height: 10rem;
     justify-self: stretch;
+    animation-name: cambio-background;
+    animation-duration: 5s;
   }
 
 
