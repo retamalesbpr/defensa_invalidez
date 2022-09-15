@@ -2,6 +2,9 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+.nav-custom{
+    background-color: #68BBE3 !important;
+}
 @keyframes cambio-background {
     from {background-color: white;}
     to {background-color: #F6A21E}
@@ -97,14 +100,14 @@ ul {
       padding: 15px;
   }
 
-  footer{
+  /* footer{
     margin-top: 10%;
     padding: 30px;
     text-align: center;
     color: white;
     background-color: #68BBE3;
     height: 50px;
-  }
+  } */
   .button{
       background-color: #68BBE3;
       color: white;

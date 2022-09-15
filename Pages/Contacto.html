@@ -6,113 +6,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../Style/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        
-        <ul class="menu">
-                <h1>Titulo</h1>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="Servicios.html">Servicios</a></li>
-                <li><a href="Trabajos.html">Trabajos</a></li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
+    <nav class="navbar navbar-expand-lg nav-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a href="Servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                  <a href="Trabajos.html">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                  <a href="Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                  <a href="Contacto.html">Contacto</a>
+              </li>
             </ul>
+          </div>
+        </div>
+      </nav>
 
-      
-    </header>
-    <section class="contacto contactoText contacto-interlineado">
-        <h2>Contacto</h2>
+      <div class="container card  mt-5">
+        <div class="row">       
+            <section class="contacto contactoText contacto-interlineado">
+                <form action="">
+                    <h2>Contacto</h2>
+                    <legend>
+                        Datos Personales
+                    </legend>
+                    <div class="row">
 
-        <form action="">
-            <fieldset>
-                <legend>
-                    Datos Personales
-                </legend>
-                <label for="Nombre">Nombre</label>
-                <input id = "Nombre" type="text" name="Nombre" placeholder="Ingresa tu nombre"/>
-            </br>
-             </br>
+                        <div class="col-md-6">
     
-                <label for="Apellido">Apellido</label>
-                <input id = "Apellido" type="Apellido" name="Apellido" placeholder="Ingresa tu Apellido"/>
-             </br>
-            </br>
+                            <label for="Nombre">Nombre</label>
+                            <input  class="form-control" id = "Nombre" type="text" name="Nombre" placeholder="Ingresa tu nombre"/>
+                        </br>
+                         </br>
+                        </div>
+                        <div class="col-md-6">
+                  
+                            <label for="Apellido">Apellido</label>
+                            <input class="form-control" id = "Apellido" type="Apellido" name="Apellido" placeholder="Ingresa tu Apellido"/>
+                         </br>
+                        </br>
+                        </div>
+                        <div class="col-md-6">
 
-    
-                <label for="Email">Email</label>
-                <input id = "Email" type="Email" name="Email" placeholder="Ingresa tu email"/>
-        </br>
-    </br>
+                            <label for="Email">Email</label>
+                            <input class="form-control" id = "Email" type="Email" name="Email" placeholder="Ingresa tu email"/>
+                      </br>
+                      </br>
+                        </div>
+                        <div class="col-md-6">
 
-    
-                <label for="DNI">DNI</label>
-                <input id = "DNI" type="DNI" name="DNI" placeholder="Ingresa tu DNI"/>
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend>
-                    Datos Opcionales
-                </legend>
-                <textarea cols="30" rows="8" placeholder="Deja tu comentario">
+                            <label for="DNI">DNI</label>
+                            <input class="form-control" id = "DNI" type="DNI" name="DNI" placeholder="Ingresa tu DNI"/>
+                     
+                        <br>
+                        </div>
+                        <legend>
+                            Datos Opcionales
+                        </legend>
+                        <div class="col-md-6">
+                            <label for="Email">Comentario</label>
 
-                </textarea>
-                <br>
-                <label for="">
-                    Selecciona un Pais
-                </label>
-                <select>
-                    <option>
-                        Chile
-                    </option>
-                    <option>
-                        Argentina
-                    </option>
-                    <option>
-                        Brasil
-                    </option>
-                </select>
-                <br>
-                <label>
-                    Selecciona tu lugar de destino
-                </label>
-                <br>
-                <label for="">Peru</label>
+                            <textarea class="form-control" cols="30" rows="8" placeholder="Deja tu comentario">
             
-                <input type="radio" name="radio">
+                            </textarea>
+                            <br>
+                        </div>
 
-                <label for="">Bolivia</label>
-                
+                        <div class="col-md-6">
+
+                            <label class="mt-4" for="">
+                                Selecciona un Pais
+                            </label>
+                            <select>
+                                <option>
+                                    Chile
+                                </option>
+                                <option>
+                                    Argentina
+                                </option>
+                                <option>
+                                    Brasil
+                                </option>
+                            </select>
+                            <br>
+                            <label>
+                                Selecciona tu lugar de destino
+                            </label>
+                            <br>
+                            <label for="">Peru</label>
+                        
+                            <input type="radio" name="radio">
             
-                <input type="radio" name="radio">
-
-                <label for="">Venezuela</label>
+                            <label for="">Bolivia</label>
+                            
+                        
+                            <input type="radio" name="radio">
             
-                <input type="radio" name="radio">
-                <br>
-                <label for="">Lleva equipaje</label>
-                <br>
-                <label>
-                    si
-                </label>
-                <input type="checkbox">
-                <br>
-                <label for="">Lleva equipaje</label>
-                <br>
-                <label>
-                    no
-                </label>
-                <input type="checkbox">
-            </fieldset>
+                            <label for="">Venezuela</label>
+                        
+                            <input type="radio" name="radio">
+                            <br>
+                            <label for="">Lleva equipaje</label>
+                            <br>
+                            <label>
+                                si
+                            </label>
+                            <input type="checkbox">
+                            <br>
+                            <label for="">Lleva equipaje</label>
+                            <br>
+                            <label>
+                                no
+                            </label>
+                            <input type="checkbox">
+                        </div>
 
+                        <div class="col-md-12">
 
-
-        <input class="button" type="submit" value="Enviar Formulario">
-        </form>
-    </section>
+                          
+                        </div>
+            
+                    </div>
+                  
+            
+        
+            
+        
+            
+        
+        
+        
+                <input class="button" type="submit" value="Enviar Formulario">
+                </form>
+            </section>
+        </div>
+      </div>
     <footer>
         <p>Desarrollado por Peter</p>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
