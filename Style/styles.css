@@ -74,8 +74,11 @@ ul {
     justify-self: stretch;
     animation-name: cambio-background;
     animation-duration: 5s;
+    border: 3px solid transparent;
   }
-
+.tarjeta:hover{
+  border: 3px solid #d0d0d0;
+}
 
 .imagen-circular{
       background-color: #F6A21E;
